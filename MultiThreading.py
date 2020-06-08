@@ -18,3 +18,9 @@ hello=Hello()
 hi.start()
 sleep(.2)
 hello.start()
+
+hi.join()
+hello.join()
+#Main Thread will wait until the hi and hello threads complete there task to print the bye
+#This is how we make main thread wait for our other threads
+print("Bye Bye")
